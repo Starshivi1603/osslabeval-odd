@@ -1,0 +1,36 @@
+contact1 ={}
+def contactinfo(name :str,phone_no : str,email_id :str):
+    contact1["name"]=name
+    contact1["phone_no"]=phone_no
+    contact1["email_id"]= email_id
+    
+contactinfo("shivi","3749282","shivi@gmail")
+contact2 ={}
+def contactinfo(name :str,phone_no : str,email_id :str):
+    contact2["name"]=name
+    contact2["phone_no"]=phone_no
+    contact2["email_id"]= email_id
+    
+contactinfo("yash","3734282","yash@gmail")
+def modify(new_no : str,new_email :str):
+    contact1["phone_no"]=new_no
+    contact1["email_id"]= new_email
+""""function to modify/update the phone number and email id."""
+modify("87470247","hello@gmail")
+contlist= []
+contlist.append(contact1)
+contlist.append(contact2)
+def remove_record(contlist :list,contact :dict):
+    contlist.remove(contact)
+remove_record(contlist,contact1)
+ def clearlist(contlist :list):
+    contlist.clear()
+clearlist(contlist)
+def show_info(contlist : list):
+    print(contlist)
+show_info(contlist)
+def search_info(contlist : list,name:str):
+      if name in contlist:
+       return true
+      else:
+       return false
